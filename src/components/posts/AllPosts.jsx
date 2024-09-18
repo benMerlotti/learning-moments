@@ -2,8 +2,12 @@ import { useState, useEffect } from "react";
 import { getAllPosts } from "../../services/postService";
 import "./AllPosts.css";
 import { AllPostsFilters } from "./AllPostsFilters";
+import { useNavigate } from "react-router-dom";
+import { Post } from "./Post";
 
 export const AllPosts = () => {
+  const navigate = useNavigate();
+
   const [posts, setPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -40,20 +44,8 @@ export const AllPosts = () => {
           posts={posts}
         />
         <div className="posts">
-          {filteredPosts.map((post) => {
-            return (
-              <div className="post-container" key={`post ${post.id}`}>
-                <div className="post">
-                  <div className="post-title-topic-container">
-                    <div className="post-title">{post.title}</div>
-                    <div className="post-topic">{post.topic.name}</div>
-                  </div>
-                  <div>
-                    <div className="post-body">{post.body}</div>
-                  </div>
-                </div>
-              </div>
-            );
+          {filteredPosts.map((postObject) => {
+            return <Post post={postObject} key={postObject.id} />;
           })}
         </div>
       </div>

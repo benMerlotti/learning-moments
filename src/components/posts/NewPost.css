@@ -1,0 +1,37 @@
+.new-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Takes up the full height of the viewport */
+}
+
+.new-post-header, .new-post-topic-container, .new-post-title-container, 
+.new-post-body-container, .new-post-button-container {
+  margin: 10px 0;
+}
+
+.topic-input, .title-input, .body-input {
+  padding: 10px;
+  width: 300px;
+}
+
+.body-input {
+    width: 500px;  /* Increase the width */
+    height: 150px; /* Increase the height */
+    text-align: left; /* Ensures text is aligned to the left */
+    text-align: top; /* Ensures text starts at the top */
+    resize: none; /* Prevents resizing */
+    overflow: auto; /* Allows scrolling if text exceeds the height */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    word-wrap: break-word; /* Breaks long words onto the next line */
+  }
+
+  .topic-input, .title-input, .body-input::placeholder {
+    text-align: center; /* Centers the placeholder text */
+  }
+  
+
+button {
+  padding: 10px 20px;
+}

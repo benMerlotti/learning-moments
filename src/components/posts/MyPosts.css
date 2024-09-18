@@ -1,0 +1,75 @@
+.posts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .posts-container h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .my-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .my-post-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .my-post-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .my-post-container div {
+    font-size: 1.2em;
+    color: #444;
+  }
+  
+  .my-posts a {
+    text-decoration: none;
+  }
+  
+  .my-posts a div {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .my-posts a div:hover {
+    color: #0056b3;
+  }
+  
+  .delete-post-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .delete-post-button:hover {
+    background-color: #c82333;
+  }
+  
+  .delete-post-button:focus {
+    outline: none;
+  }
+  

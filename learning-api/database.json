@@ -1,130 +1,135 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "cohort": "Cohort 1"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane.smith@example.com",
-        "cohort": "Cohort 2"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "email": "alice.johnson@example.com",
-        "cohort": "Cohort 3"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "email": "bob.brown@example.com",
-        "cohort": "Cohort 1"
-      },
-      {
-        "id": 5,
-        "name": "Charlie Green",
-        "email": "charlie.green@example.com",
-        "cohort": "Cohort 2"
-      }
-    ],
-    "posts": [
-        {
-            "id": 1,
-            "userId": 1,
-            "title": "Understanding Functions",
-            "body": "Today I learned about JavaScript functions, which are one of the most essential building blocks in programming. Functions allow you to encapsulate logic in a reusable way, making your code more modular and easier to maintain. I explored how functions can take parameters, return values, and how they can be called multiple times within a program. Understanding how functions work has helped me see how they form the backbone of many programs, allowing for cleaner and more efficient code. I also touched on anonymous functions, which are often used in modern JavaScript.",
-            "date": "2024-09-09",
-            "topicId": 1
-          },
-          {
-            "id": 2,
-            "userId": 2,
-            "title": "Async Programming in JS",
-            "body": "Asynchronous programming in JavaScript is very powerful and essential for handling tasks like data fetching and I/O operations without blocking the execution of code. Today, I explored `async` and `await`, which simplify working with promises and make asynchronous code look synchronous, making it easier to read and maintain. I also learned about the importance of non-blocking code in JavaScript, especially in environments like web browsers where blocking the UI thread can cause the application to become unresponsive. This deeper understanding of asynchronous programming is going to be crucial as I move on to more complex projects involving API calls and event-driven code.",
-            "date": "2024-09-08",
-            "topicId": 2
-          },
-          {
-            "id": 3,
-            "userId": 3,
-            "title": "Introduction to React",
-            "body": "React makes building UI components so easy by using a component-based architecture. I learned that React allows developers to break down user interfaces into small, reusable pieces of code called components, which can manage their own state and logic. These components can be composed together to build complex interfaces in a very maintainable and scalable way. One of the most impressive features of React is how it handles reactivity and updates the UI efficiently using a virtual DOM. I'm excited to dive deeper into its features like hooks, especially `useState` and `useEffect`, to handle dynamic data in my apps.",
-            "date": "2024-09-07",
-            "topicId": 3
-          },
-          {
-            "id": 4,
-            "userId": 4,
-            "title": "State Management with Redux",
-            "body": "Redux helps with complex state management in large applications by providing a predictable state container for JavaScript apps. I learned that Redux centralizes the state in a single store, allowing any component in the app to access it without having to pass props down multiple levels. This greatly simplifies the process of managing state in larger applications where data needs to flow between different components. Understanding actions, reducers, and the store is key to mastering Redux. While it adds some boilerplate, the benefits of having a clear and predictable state management system far outweigh the complexity, especially in applications with lots of dynamic data.",
-            "date": "2024-09-06",
-            "topicId": 4
-          },
-          {
-            "id": 5,
-            "userId": 5,
-            "title": "Understanding Closures",
-            "body": "Closures are a fundamental concept in JavaScript that allow functions to remember their lexical environment, even after they’ve executed. This means that a closure can access variables from its parent scope, making it a powerful tool for creating functions with private variables or for passing around state. I learned that closures are often used in callbacks, event handlers, and functional programming. They're also key to understanding more advanced topics like currying and memoization. While closures can be tricky to grasp at first, they offer an elegant way to maintain state across function calls and control the visibility of variables.",
-            "date": "2024-09-05",
-            "topicId": 1
-          }
-          
-    ],
-    "topics": [
-      {
-        "id": 1,
-        "name": "JavaScript"
-      },
-      {
-        "id": 2,
-        "name": "Asynchronous Programming"
-      },
-      {
-        "id": 3,
-        "name": "React"
-      },
-      {
-        "id": 4,
-        "name": "Redux"
-      },
-      {
-        "id": 5,
-        "name": "CSS Flexbox"
-      },
-      {
-        "id": 6,
-        "name": "Git and GitHub"
-      }
-    ],
-    "likes": [
-      {
-        "id": 1,
-        "userId": 1,
-        "postId": 2
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "postId": 3
-      },
-      {
-        "id": 3,
-        "userId": 3,
-        "postId": 1
-      },
-      {
-        "id": 4,
-        "userId": 4,
-        "postId": 5
-      },
-      {
-        "id": 5,
-        "userId": 1,
-        "postId": 2
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "cohort": "Cohort 1"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "cohort": "Cohort 2"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "cohort": "Cohort 3"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "cohort": "Cohort 1"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Green",
+      "email": "charlie.green@example.com",
+      "cohort": "Cohort 2"
+    },
+    {
+      "email": "iceskateprincess@gmail.com",
+      "fullName": "Tonya Harding",
+      "cohort": 1,
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Understanding Functions",
+      "body": "Today I learned about JavaScript functions, which are one of the most essential building blocks in programming. Functions allow you to encapsulate logic in a reusable way, making your code more modular and easier to maintain. I explored how functions can take parameters, return values, and how they can be called multiple times within a program. Understanding how functions work has helped me see how they form the backbone of many programs, allowing for cleaner and more efficient code. I also touched on anonymous functions, which are often used in modern JavaScript.",
+      "date": "2024-09-09",
+      "topicId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Async Programming in JS",
+      "body": "Asynchronous programming in JavaScript is very powerful and essential for handling tasks like data fetching and I/O operations without blocking the execution of code. Today, I explored `async` and `await`, which simplify working with promises and make asynchronous code look synchronous, making it easier to read and maintain. I also learned about the importance of non-blocking code in JavaScript, especially in environments like web browsers where blocking the UI thread can cause the application to become unresponsive. This deeper understanding of asynchronous programming is going to be crucial as I move on to more complex projects involving API calls and event-driven code.",
+      "date": "2024-09-08",
+      "topicId": 2
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "title": "Introduction to React",
+      "body": "React makes building UI components so easy by using a component-based architecture. I learned that React allows developers to break down user interfaces into small, reusable pieces of code called components, which can manage their own state and logic. These components can be composed together to build complex interfaces in a very maintainable and scalable way. One of the most impressive features of React is how it handles reactivity and updates the UI efficiently using a virtual DOM. I'm excited to dive deeper into its features like hooks, especially `useState` and `useEffect`, to handle dynamic data in my apps.",
+      "date": "2024-09-07",
+      "topicId": 3
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "title": "State Management with Redux",
+      "body": "Redux helps with complex state management in large applications by providing a predictable state container for JavaScript apps. I learned that Redux centralizes the state in a single store, allowing any component in the app to access it without having to pass props down multiple levels. This greatly simplifies the process of managing state in larger applications where data needs to flow between different components. Understanding actions, reducers, and the store is key to mastering Redux. While it adds some boilerplate, the benefits of having a clear and predictable state management system far outweigh the complexity, especially in applications with lots of dynamic data.",
+      "date": "2024-09-06",
+      "topicId": 4
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "title": "Understanding Closures",
+      "body": "Closures are a fundamental concept in JavaScript that allow functions to remember their lexical environment, even after they’ve executed. This means that a closure can access variables from its parent scope, making it a powerful tool for creating functions with private variables or for passing around state. I learned that closures are often used in callbacks, event handlers, and functional programming. They're also key to understanding more advanced topics like currying and memoization. While closures can be tricky to grasp at first, they offer an elegant way to maintain state across function calls and control the visibility of variables.",
+      "date": "2024-09-05",
+      "topicId": 1
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "JavaScript"
+    },
+    {
+      "id": 2,
+      "name": "Asynchronous Programming"
+    },
+    {
+      "id": 3,
+      "name": "React"
+    },
+    {
+      "id": 4,
+      "name": "Redux"
+    },
+    {
+      "id": 5,
+      "name": "CSS Flexbox"
+    },
+    {
+      "id": 6,
+      "name": "Git and GitHub"
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "postId": 2
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "postId": 3
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "postId": 5
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "postId": 2
+    }
+  ]
+}

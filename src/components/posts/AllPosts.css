@@ -28,6 +28,16 @@
     margin-bottom: 10px;
   }
 
+  .post-title {
+    cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+
+  .post-title:hover {
+    color: #007bff; /* Changes background color on hover */
+
+  }
+
   .post-topic {
     margin-top: 5px;
     font-size: 12px;
